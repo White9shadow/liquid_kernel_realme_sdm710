@@ -1837,7 +1837,6 @@ static int xfrm_get_policy(struct sk_buff *skb, struct nlmsghdr *nlh,
 	struct xfrm_mark m;
 	u32 mark = xfrm_mark_get(attrs, &m);
 	u32 if_id = 0;
-
 	p = nlmsg_data(nlh);
 	delete = nlh->nlmsg_type == XFRM_MSG_DELPOLICY;
 
@@ -2140,7 +2139,6 @@ static int xfrm_add_pol_expire(struct sk_buff *skb, struct nlmsghdr *nlh,
 	struct xfrm_mark m;
 	u32 mark = xfrm_mark_get(attrs, &m);
 	u32 if_id = 0;
-
 	err = copy_from_user_policy_type(&type, attrs);
 	if (err)
 		return err;
