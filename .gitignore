@@ -118,6 +118,13 @@ all.config
 
 # fetched Android config fragments
 kernel/configs/android-*.cfg
+AnyKernel3/
+clang/
+out/
+los-4.9-32/
+los-4.9-64/
+sdm710.sh
+log.txt
 
 #
 #Ignoring Android.bp link file
